@@ -1,37 +1,25 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     const nextText = document.querySelector('.next p');
-
-//     function fadeIn(element, delay = 0) {
-//         setTimeout(() => {
-//             element.style.opacity = 1;
-//             element.style.transform = 'translateY(0)';
-//         }, delay);
-//     }
-
-//     // Initially set styles for animation
-//     nextText.style.opacity = 0;
-//     nextText.style.transform = 'translateY(20px)';
-
-//     // Apply animations
-//     fadeIn(nextText, 2000); 
-
-//     // Add click event to proceed
-//     nextText.addEventListener('click', function() {
-//         window.location.replace("main.html");
-//     });
-// });
-
 document.addEventListener("DOMContentLoaded", function() {
-    // Pilih elemen dengan ID 'loginTodoList'
-    const loginTodoList = document.getElementById('loginTodoList');
+    const nextText = document.querySelector('.next p');
 
-    // Tambahkan event listener untuk menangani peristiwa 'click' pada elemen
-    loginTodoList.addEventListener('click', function() {
-        // Arahkan pengguna ke 'main.html' ketika elemen diklik
-        window.location.href = 'main.html';
+    function fadeIn(element, delay = 0) {
+        setTimeout(() => {
+            element.style.opacity = 1;
+            element.style.transform = 'translateY(0)';
+        }, delay);
+    }
+
+    // Initially set styles for animation
+    nextText.style.opacity = 0;
+    nextText.style.transform = 'translateY(20px)';
+
+    // Apply animations
+    fadeIn(nextText, 2000); 
+
+    // Add click event to proceed
+    nextText.addEventListener('click', function() {
+        window.location.replace("main.html");
     });
 });
-
 
 window.addEventListener('load', () => {
     const form = document.querySelector("#new-task-form")
